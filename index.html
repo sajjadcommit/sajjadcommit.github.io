@@ -3,30 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sajjad — Developer Portfolio</title>
+  <title>Mohammad Sajjad — BIG-IP F5 Administrator &amp; NetDevOps Automation</title>
   <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1f2328;
+      --muted: #59636e;
+      --border: #d0d7de;
+      --tag-bg: #f6f8fa;
+      --accent: #0969da;
+    }
     body {
       font-family: system-ui, -apple-system, sans-serif;
-      max-width: 640px;
-      margin: 4rem auto;
+      max-width: 720px;
+      margin: 3.5rem auto;
       padding: 0 1.5rem;
-      line-height: 1.6;
-      color: #1f2328;
+      line-height: 1.65;
+      color: var(--text);
+      background: var(--bg);
     }
-    h1 { margin-bottom: 0.25rem; }
-    .subtitle { color: #59636e; margin-top: 0; }
-    a { color: #0969da; text-decoration: none; margin-right: 1rem; }
+    h1 { margin-bottom: 0.2rem; font-size: 1.9rem; }
+    h2 { font-size: 1.15rem; margin-top: 2rem; border-bottom: 1px solid var(--border); padding-bottom: 0.35rem; }
+    .subtitle { color: var(--muted); margin-top: 0; font-size: 1.05rem; }
+    .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
+    .tag {
+      background: var(--tag-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.2rem 0.6rem;
+      font-size: 0.85rem;
+      font-family: ui-monospace, SFMono-Regular, monospace;
+    }
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+    }
+    .card h3 { margin: 0 0 0.35rem 0; font-size: 1rem; }
+    .card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+    a { color: var(--accent); text-decoration: none; margin-right: 1.25rem; font-weight: 500; }
     a:hover { text-decoration: underline; }
+    footer { margin-top: 3rem; color: var(--muted); font-size: 0.85rem; }
   </style>
 </head>
 <body>
-  <h1>Hello World!</h1> 
-    I'm Mohammad Sajjad</h1>
-  <p class="subtitle"> Software Developer &amp; Builder</p>
-  <p>Welcome to my personal site. I build software tools, explore new technologies, and share projects on GitHub.</p>
+  <h1>Mohammad Sajjad</h1>
+  <p class="subtitle">BIG-IP F5 Administrator &bull; NetDevOps &amp; Security Automation</p>
   <p>
-    <a href="https://github.com">GitHub</a>
+    Welcome to my engineering log and automation hub. I document real-world architecture, troubleshooting, and infrastructure-as-code workflows across F5 BIG-IP, Linux, and enterprise application delivery.
+  </p>
+
+  <div class="tags">
+    <span class="tag">BIG-IP LTM</span>
+    <span class="tag">GTM / DNS</span>
+    <span class="tag">APM</span>
+    <span class="tag">ASM / AWAF</span>
+    <span class="tag">iRules (Tcl)</span>
+    <span class="tag">Python</span>
+    <span class="tag">Ansible</span>
+    <span class="tag">AS3 / CI/CD</span>
+    <span class="tag">Linux</span>
+  </div>
+
+  <h2>Automation &amp; Engineering Focus</h2>
+  <div class="card">
+    <h3>iRules &amp; Traffic Management</h3>
+    <p>Custom Tcl iRules for dynamic routing, header manipulation, TLS/SSL inspection, and zero-downtime maintenance windows.</p>
+  </div>
+  <div class="card">
+    <h3>Python, Ansible &amp; Declarative F5 (AS3)</h3>
+    <p>Automating VIP provisioning, SSL certificate lifecycle renewals, BIG-IP backups, and CI/CD configuration pipelines via iControl REST and Ansible.</p>
+  </div>
+  <div class="card">
+    <h3>Application Security &amp; Linux Notes</h3>
+    <p>Field notes on WAF policy tuning (ASM/AWAF), APM access policies, GTM global traffic failover, and Linux packet capture / tcpdump diagnostics.</p>
+  </div>
+
+  <h2>Connect</h2>
+  <p>
+    <a href="https://github.com">GitHub (@sajjadcommit)</a>
     <a href="mailto:masajjad@gmail.com">Email</a>
   </p>
+
+  <footer>&copy; 2026 Mohammad Sajjad &bull; Hosted on GitHub Pages</footer>
 </body>
 </html>
